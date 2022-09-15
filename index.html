@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Abhradeep Biswas</title>
+    <link rel = "stylesheet" href = "style.css?v=<?php echo time(); ?>">
+    <meta name="viewport" content="width=device-width,initial scale =1"/>
+    <!------------------------------------------------------Script---------------------------------------------------------->
+    
+    <script src="https://kit.fontawesome.com/db79afedbd.js" crossorigin="anonymous"></script>
+    
+    </script>
+     <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-46GSTWE9PM"></script>
+     <script>
+       window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+ 
+             gtag('config', 'G-46GSTWE9PM');
+             </script>
+   
+    
+    
+
+    
+</head>
+<body>
+    <!------------------------------------------------------Header---------------------------------------------------------->
+    <div >
+        <div  id="container1">
+            <img src="images/logo.png" alt="logo" class="logo">
+           
+            <nav >
+                <ul id="sidemenu">
+                  <li><a  href="#about">About Me</a></li>  
+                  
+                  <li><a href="#contact">Contact Me</a></li> 
+                  <li><a download  href="Abhradeep_Biswas_cv.pdf" >Download CV</a></li>
+                  <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div id="header"></div>
+               <div class="header-text">
+                <h1>   Hi, I'm <span>Abhradeep Biswas </span><br>   From Kolkata, WB.</h1>
+               </div>
+            </div>
+        
+        </div>
+
+    </div>
+     <!---------------------------------------------------about------------------------------------------------------------->
+    <div id="about">
+       
+        <div class = "container" >
+           <div class = "row" >
+                <div class = "about-col-1" >
+                <img src="images/aboutme.png" >    
+                </div >
+                <div class = "about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="mytitle">Seeking for a beginner role to enhance and explore my technical
+                        knowledge gained at Brainware University in the last years.</p>
+                        <div class = "tab-titles" >
+                        <p class = "tab-links active-link" onclick="opentab('skills')" > Skills </p >
+                        <p class = "tab-links" onclick="opentab('experience')" > Experience </p >
+                        <p class = "tab-links " onclick="opentab('education')"> Education </p >
+                        </div >
+                        <div class="tab-contents active-tab"  id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br> Website Development</li>
+                                <li><span>Coding Knowledge</span><br> Programming Skils in C#, Python, HTML, CSS</li>
+                            </ul>
+                        </div> 
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>WebSite Project</span><br> My Protfolio Website -<span>abhradeep.com</span></li>
+                                <li><span>HTML Course Certificate By Sololearn | July-2018</span><br> Knowledge About HTML Programming Language.</li>
+                                <li><span>CSS Course By Programming Hub | March-2019</span><br> Knowledge About CSS Programming Language</li>
+                                <li><span>Carrer Edge Course By TCS | June-2022</span><br> Knowledge About Carrier and Ethics.</li>
+                            </ul>
+                        </div> 
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>B.C.A. | 2020-2023</span><br> From Brainware University.</li>
+                                <li><span>Higher Secondary | 2012-2020</span><br> From Jamsherpur B. N. High School.</li>
+                            </ul>
+                        </div> 
+                </div >
+           </div >
+        </div >
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+            
+        }
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-400px";
+        }
+    </script>
+
+     <!-----------------------------------------------Contact-------------------------------------------------------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                     <h1 class="sub-title">Contact Me</h1>
+                        <P><i class="fas fa-paper-plane"></i>abhrodeepkarimpur@gmail.com</P>
+                           <p><i class="fas fa-phone-square-alt"></i>+91 8515073783.</p>
+                          <a class="btn" download  href="Abhradeep_Biswas_cv.pdf" >Download CV</a>
+
+                           </div>
+                          <div class="contact-right">
+                        <form  action="https://formsubmit.co/9223716d387080051846d9e9e6a3181f" method="POST">
+                        <input type="text" name="name" id="name"placeholder=" Your Name" required>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" id="message"placeholder="Your Message"></textarea>
+                        <button class="btn" type="submit">Submit</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        <!-----------------------------------------------Copyright-------------------------------------------------------->
+        <div class="container3">
+        <div class="copyright">
+            <p>Copyright © Abhradeep. Made with<i class="fas fa-heart"></i> by Abhradeep Biswas. </p>
+        </div>
+    </div>
+
+     </div>
+</body>
+</html>
