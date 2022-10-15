@@ -1,0 +1,35 @@
+body {
+  background: #080808;
+  color: #fff;
+}
+.head1 {
+  text-align: center;
+  margin-top: 80px;
+  color: #f7f1f3;
+  font-size: 50px;
+  font-weight: 800;
+}
+.head2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #f7f1f3;
+  font-size: 30px;
+  font-weight: 600;
+}
+.btn {
+  text-align: center;
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #ff004f;
+  margin: 30px;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+}
+.logo {
+  width: 100px;
+  margin-top: -5px;
+}
