@@ -214,10 +214,7 @@ form .btn {
 .copyright i {
   color: #ff004f;
 }
-.g-recaptcha {
-  height: fit-content;
-  width: fit-content;
-}
+
 /*.................................CSS for small screen.............................*/
 
 @media only screen and (max-width: 600px) {
