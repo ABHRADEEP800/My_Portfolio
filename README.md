@@ -21,3 +21,21 @@ This portfolio is built using a combination of:
 - **Responsive Design**: The portfolio is designed to look great on any device.
 - **Dynamic Projects Section**: Displaying my latest projects and skills.
 - **Contact Form**: Integrated with PHP for handling inquiries.
+
+## Features
+
+- **Responsive Design**: The portfolio is designed to look great on any device.
+- **Dynamic Projects Section**: Displaying my latest projects and skills.
+- **Contact Form**: Integrated with PHP for handling inquiries.
+
+## Contributing
+
+Feedback and contributions are welcome! If you find any bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+## Contact
+
+Feel free to reach out to me via:
+
+- Email: [hello@abhradeep.com](mailto:hello@abhradeep.com)
+- LinkedIn: [ABHRADEEP800](https://linkedin.com/in/ABHRADEEP800)
+- GitHub: [github.com/ABHRADEEP800](https://github.com/ABHRADEEP800)
