@@ -1,0 +1,23 @@
+# Abhradeep's Portfolio
+
+Welcome to my personal portfolio! 🎉  
+Visit it live at: [abhradeep.com](https://abhradeep.com)
+
+## About Me
+
+I am Abhradeep, a passionate developer currently pursuing my **Master of Computer Applications (MCA)** based in **Kolkata, West Bengal**. With a strong focus on web development, I enjoy creating clean, modern, and responsive web designs. My goal is to continually grow as a developer and contribute to impactful projects.
+
+## Tech Stack
+
+This portfolio is built using a combination of:
+
+- **HTML5**: For the structure and semantics.
+- **JavaScript**: To bring interactive elements to life.
+- **PHP**: For server-side logic and form handling.
+- **Tailwind CSS**: For rapid and customizable styling.
+
+## Features
+
+- **Responsive Design**: The portfolio is designed to look great on any device.
+- **Dynamic Projects Section**: Displaying my latest projects and skills.
+- **Contact Form**: Integrated with PHP for handling inquiries.
