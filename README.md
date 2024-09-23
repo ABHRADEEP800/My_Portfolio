@@ -22,11 +22,6 @@ This portfolio is built using a combination of:
 - **Dynamic Projects Section**: Displaying my latest projects and skills.
 - **Contact Form**: Integrated with PHP for handling inquiries.
 
-## Features
-
-- **Responsive Design**: The portfolio is designed to look great on any device.
-- **Dynamic Projects Section**: Displaying my latest projects and skills.
-- **Contact Form**: Integrated with PHP for handling inquiries.
 
 ## Contributing
 
