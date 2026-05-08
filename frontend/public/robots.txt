@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Block common noise
+Disallow: /api/
+Disallow: /.env
+Disallow: /node_modules/
+
+# Sitemaps
+Sitemap: https://abhradeep.com/sitemap.xml

@@ -1,0 +1,44 @@
+{
+  "name": "auth-backend-mysql",
+  "version": "1.0.0",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.9.3"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -r dotenv/config src/server.js",
+    "format": "prettier --write src/*.js src/**/*.js",
+    "start": "node -r dotenv/config src/server.js"
+  },
+  "author": "Tanmoy",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "events": "^3.3.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "form-data": "^4.0.4",
+    "forwarded-parse": "^2.1.2",
+    "googleapis": "^164.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.1.2",
+    "nodemailer": "^8.0.7",
+    "qrcode": "^1.5.4",
+    "redis": "^5.9.0",
+    "speakeasy": "^2.0.0",
+    "ua-parser-js": "^2.0.8",
+    "uuid": "^14.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  }
+}
