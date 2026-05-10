@@ -33,7 +33,12 @@ function ReadyGate({ onReady }: { onReady: () => void }) {
 }
 
 // ── Scroll-reveal observer ───────────────────────────────────────────────────
-function useReveal() {
+// lazyReady flips to true once all lazy siblings have mounted (via ReadyGate).
+// That triggers a second pass so elements that weren't in the DOM during the
+// initial check (slow first-load / incognito) get revealed correctly.
+function useReveal(lazyReady: boolean) {
+  const ioRef = useRef<IntersectionObserver | null>(null);
+
   useLayoutEffect(() => {
     const io = new IntersectionObserver(
       (entries) =>
@@ -45,6 +50,7 @@ function useReveal() {
         }),
       { threshold: 0.08, rootMargin: "0px 0px -40px 0px" }
     );
+    ioRef.current = io;
 
     function check() {
       document.querySelectorAll<Element>(".reveal").forEach((el) => {
@@ -58,18 +64,37 @@ function useReveal() {
     }
 
     check();
-    // Re-check after lazy chunks have mounted
+    // Fallback for fast loads where lazy chunks mount within 700 ms
     const t = setTimeout(check, 700);
-    return () => { io.disconnect(); clearTimeout(t); };
+    return () => { io.disconnect(); ioRef.current = null; clearTimeout(t); };
   }, []);
+
+  // Second pass once ALL lazy components are confirmed mounted
+  useEffect(() => {
+    if (!lazyReady) return;
+    const io = ioRef.current;
+    document.querySelectorAll<Element>(".reveal").forEach((el) => {
+      if (el.classList.contains("visible")) return;
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) {
+        el.classList.add("visible");
+      } else if (io) {
+        io.observe(el);
+      }
+    });
+  }, [lazyReady]);
 }
 
 // ── Portfolio page ───────────────────────────────────────────────────────────
 function Portfolio({ onReady }: { onReady: () => void }) {
-  useReveal();
+  const [lazyReady, setLazyReady] = useState(false);
+  useReveal(lazyReady);
 
   // Stable reference so ReadyGate useEffect never re-fires on re-renders
-  const stableOnReady = useCallback(onReady, []); // eslint-disable-line
+  const stableOnReady = useCallback(() => { // eslint-disable-line
+    setLazyReady(true);
+    onReady();
+  }, []); // eslint-disable-line
 
   return (
     <div
