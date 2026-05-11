@@ -105,7 +105,7 @@ export default function Hero() {
                   style={{ background: "conic-gradient(var(--accent), var(--violet), var(--accent))", padding: "3px" }}>
                   <div className="w-full h-full rounded-full overflow-hidden"
                     style={{ border: "4px solid var(--bg)" }}>
-                    <img src="/images/profile-img.png" alt="Abhradeep Biswas"
+                    <img src="/images/hero.png" alt="Abhradeep Biswas"
                       className="w-full h-full object-cover object-top" />
                   </div>
                 </div>

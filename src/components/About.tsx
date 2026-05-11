@@ -31,7 +31,7 @@ export default function About() {
               </div>
               <div className="absolute inset-[10px] rounded-full overflow-hidden"
                 style={{ border: "3px solid var(--surface-2)" }}>
-                <img src="/images/user-image.png" alt="About Abhradeep"
+                <img src="/images/about.png" alt="About Abhradeep"
                   className="w-full h-full object-cover object-top" />
               </div>
             </div>
