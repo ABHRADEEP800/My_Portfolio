@@ -1,13 +1,18 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-export default function NotFound() {
+export default function NotFound({ onReady }: { onReady?: () => void }) {
   // Update page title for 404
   useEffect(() => {
     const prev = document.title;
     document.title = "404 — Page Not Found | Abhradeep Biswas";
     return () => { document.title = prev; };
   }, []);
+
+  // Signal that the page is ready (for loading screen)
+  useEffect(() => {
+    onReady?.();
+  }, [onReady]);
 
   return (
     <div

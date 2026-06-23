@@ -24,8 +24,8 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    const sections = NAV.map(l => document.getElementById(l.id));
     const fn = () => {
+      const sections = NAV.map(l => document.getElementById(l.id)).filter(Boolean);
       const pos = window.scrollY + 120;
       sections.forEach(s => {
         if (s && pos >= s.offsetTop && pos < s.offsetTop + s.offsetHeight)
@@ -60,7 +60,7 @@ export default function Navbar() {
             <a key={id} href={`#${id}`} onClick={() => setActive(id)}
               className="px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200"
               style={active === id
-                ? { background: "var(--accent)", color: "#04040e", fontWeight: 600 }
+                ? { background: "var(--accent)", color: "#ffffff", fontWeight: 600 }
                 : { color: "var(--text-2)" }}>
               {label}
             </a>
@@ -85,7 +85,7 @@ export default function Navbar() {
           {/* Hire me */}
           <a href="#contact"
             className="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold px-5 py-2 rounded-full transition-all duration-200 hover:opacity-90 hover:-translate-y-px"
-            style={{ background: "var(--accent)", color: "#04040e" }}>
+            style={{ background: "var(--accent)", color: "#ffffff" }}>
             Hire me
             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3"/>

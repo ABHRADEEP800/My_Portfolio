@@ -158,7 +158,7 @@ export default function App() {
       <Routes>
         {/* onReady wired into Portfolio → ReadyGate → fires setAppReady */}
         <Route path="/"  element={<Portfolio onReady={() => setAppReady(true)} />} />
-        <Route path="*"  element={<NotFound />} />
+        <Route path="*"  element={<NotFound onReady={() => setAppReady(true)} />} />
       </Routes>
     </>
   );

@@ -124,7 +124,7 @@ img, svg, video { max-width: 100%; }
   font-weight: 600;
   font-size: 0.875rem;
   background: var(--accent);
-  color: #04040e;
+  color: #ffffff;
   transition: opacity 0.2s, transform 0.15s;
 }
 .btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
