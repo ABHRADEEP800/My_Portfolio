@@ -7,6 +7,9 @@
     "npm": ">=10.9.3"
   },
   "type": "module",
+  "overrides": {
+    "esbuild": "^0.28.1"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
