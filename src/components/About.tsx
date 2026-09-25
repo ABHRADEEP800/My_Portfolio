@@ -9,7 +9,7 @@ const CARDS = [
   { label: "Role", value: "Founder & CEO", icon: "🚀" },
   { label: "Company", value: "Aptorit Technologies LLP", icon: "🏢" },
   { label: "Location", value: "Kolkata, WB", icon: "📍" },
-  { label: "Email", value: "hello@abhradeep.com", icon: "✉️" },
+  { label: "Email", value: "ceo@aptorit.com", icon: "✉️" },
 ];
 
 export default function About() {

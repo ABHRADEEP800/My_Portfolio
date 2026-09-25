@@ -5,7 +5,7 @@ import SectionHeader from "./SectionHeader";
 import { sendContactMessage } from "../services/contact.service";
 
 const LINKS = [
-  { label: "Email",    value: "hello@abhradeep.com",       href: "mailto:hello@abhradeep.com",          icon: "✉️" },
+  { label: "Email",    value: "ceo@aptorit.com",       href: "mailto:ceo@aptorit.com",          icon: "✉️" },
   { label: "GitHub",   value: "github.com/ABHRADEEP800",   href: "https://github.com/ABHRADEEP800",     icon: "🔗" },
   { label: "LinkedIn", value: "linkedin.com/in/ABHRADEEP800", href: "https://linkedin.com/in/ABHRADEEP800", icon: "💼" },
 ];
