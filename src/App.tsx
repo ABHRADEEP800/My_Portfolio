@@ -10,11 +10,12 @@ import LoadingScreen from "./components/LoadingScreen";
 import NotFound      from "./components/NotFound";
 
 // Lazy loaded — split into separate JS chunks; loaded on demand
-const Skills   = lazy(() => import("./components/Skills"));
-const About    = lazy(() => import("./components/About"));
-const Projects = lazy(() => import("./components/Projects"));
-const Contact  = lazy(() => import("./components/Contact"));
-const Footer   = lazy(() => import("./components/Footer"));
+const Skills     = lazy(() => import("./components/Skills"));
+const About      = lazy(() => import("./components/About"));
+const Experience = lazy(() => import("./components/Experience"));
+const Projects   = lazy(() => import("./components/Projects"));
+const Contact    = lazy(() => import("./components/Contact"));
+const Footer     = lazy(() => import("./components/Footer"));
 
 interface RS { theme: { pageTheme: string } }
 
@@ -112,6 +113,7 @@ function Portfolio({ onReady }: { onReady: () => void }) {
         <Suspense fallback={null}>
           <Skills />
           <About />
+          <Experience />
           <Projects />
           <Contact />
           <ReadyGate onReady={stableOnReady} />

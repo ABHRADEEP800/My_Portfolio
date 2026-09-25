@@ -6,10 +6,10 @@ const TOOLS = [
 ];
 
 const CARDS = [
+  { label: "Role", value: "Founder & CEO", icon: "🚀" },
+  { label: "Company", value: "Aptorit Technologies LLP", icon: "🏢" },
   { label: "Location", value: "Kolkata, WB", icon: "📍" },
-  { label: "Education", value: "MCA Graduate", icon: "🎓" },
   { label: "Email", value: "hello@abhradeep.com", icon: "✉️" },
-  { label: "Status", value: "Open to Work", icon: "🟢" },
 ];
 
 export default function About() {
@@ -17,7 +17,7 @@ export default function About() {
     <section id="about" className="py-24">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         <SectionHeader eyebrow="About Me" title="Who I" highlight="Am" align="center"
-          subtitle="Passionate developer who loves building things that live on the internet." />
+          subtitle="Founder & CEO of Aptorit Technologies LLP — building software that works." />
 
         <div className="grid lg:grid-cols-[1fr_1.2fr] gap-14 items-start">
 
@@ -31,7 +31,7 @@ export default function About() {
               </div>
               <div className="absolute inset-[10px] rounded-full overflow-hidden"
                 style={{ border: "3px solid var(--surface-2)" }}>
-                <img src="/images/about.png" alt="About Abhradeep"
+                <img src="/images/about.png" alt="Abhradeep Biswas"
                   className="w-full h-full object-cover object-top" />
               </div>
             </div>
@@ -54,13 +54,18 @@ export default function About() {
           <div className="flex flex-col gap-8 reveal" style={{ animationDelay: "0.1s" }}>
             <div>
               <p className="text-base sm:text-lg leading-relaxed" style={{ color: "var(--text-2)" }}>
-                Hi! I'm <strong style={{ color: "var(--text)" }}>Abhradeep Biswas</strong>, a passionate web developer from Kolkata with an
-                MCA degree and a love for clean, modern interfaces. I specialise in React and Node.js,
-                turning ideas into fast, accessible, and visually appealing products.
+                Hi! I'm <strong style={{ color: "var(--text)" }}>Abhradeep Biswas</strong>, Founder &amp; CEO of{" "}
+                <a href="https://aptorit.com" target="_blank" rel="noreferrer"
+                  className="font-semibold hover:underline" style={{ color: "var(--accent)" }}>
+                  Aptorit Technologies LLP
+                </a>
+                . I lead our engineering and product vision, building modern, scalable software
+                with React, Node.js, PHP and cloud-native tooling.
               </p>
               <p className="mt-4 text-base sm:text-lg leading-relaxed" style={{ color: "var(--text-2)" }}>
-                When I'm not coding, I'm exploring new frameworks, contributing to open-source projects,
-                or sketching UI ideas on paper. I'm always looking for interesting problems to solve.
+                From startups to established businesses, I turn ideas into fast, accessible and
+                visually compelling products. When I'm not shipping code, I'm mentoring, exploring
+                new frameworks, and contributing to open source.
               </p>
             </div>
 
@@ -81,7 +86,7 @@ export default function About() {
             <div>
               <p className="text-xs font-mono font-medium mb-3" style={{ color: "var(--accent)" }}>CORE SKILLS</p>
               <div className="flex flex-wrap gap-2">
-                {["HTML","CSS","JavaScript","PHP","MySQL","Bootstrap","React","Node.js"].map(s => (
+                {["Leadership","Product Strategy","React","Node.js","TypeScript","PHP","MySQL","Cloud & DevOps"].map(s => (
                   <span key={s} className="chip">{s}</span>
                 ))}
               </div>

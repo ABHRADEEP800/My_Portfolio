@@ -43,9 +43,9 @@ export default defineConfig({
         swDest: "dist/sw.js",
       },
       manifest: {
-        name: "Abhradeep Biswas — Portfolio",
+        name: "Abhradeep Biswas — Founder & CEO, Aptorit",
         short_name: "AB Portfolio",
-        description: "Portfolio of Abhradeep Biswas — Full-Stack Developer from Kolkata",
+        description: "Abhradeep Biswas — Founder & CEO of Aptorit Technologies LLP and Full-Stack Developer from Kolkata",
         theme_color: "#04040e",
         background_color: "#04040e",
         display: "standalone",

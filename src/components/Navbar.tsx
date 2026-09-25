@@ -3,10 +3,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { setTheme } from "../store/theme/themeSlice";
 
 const NAV = [
-  { id: "home",     label: "Home" },
-  { id: "about",    label: "About" },
-  { id: "projects", label: "Projects" },
-  { id: "contact",  label: "Contact" },
+  { id: "home",       label: "Home" },
+  { id: "about",      label: "About" },
+  { id: "experience", label: "Experience" },
+  { id: "projects",   label: "Projects" },
+  { id: "contact",    label: "Contact" },
 ];
 
 export default function Navbar() {

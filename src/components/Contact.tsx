@@ -38,17 +38,29 @@ export default function Contact() {
     <section id="contact" className="py-24">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         <SectionHeader eyebrow="Get In Touch" title="Let's" highlight="Connect"
-          subtitle="Got a project in mind or just want to say hi? I'd love to hear from you." />
+          subtitle="Want to work with Aptorit or just want to say hi? I'd love to hear from you." />
 
         <div className="grid lg:grid-cols-[1fr_1.4fr] gap-10">
 
           {/* Left: info */}
           <div className="flex flex-col gap-6 reveal">
             <p className="text-base leading-relaxed" style={{ color: "var(--text-2)" }}>
-              I'm currently open to freelance work and full-time opportunities.
-              Whether it's a quick question or a long-term collaboration, don't
-              hesitate to reach out!
+              As Founder &amp; CEO of{" "}
+              <a href="https://aptorit.com" target="_blank" rel="noreferrer"
+                className="font-semibold hover:underline" style={{ color: "var(--accent)" }}>
+                Aptorit Technologies LLP
+              </a>
+              , I'm always open to new projects, partnerships and collaborations.
+              Whether it's a quick question or a long-term engagement, don't hesitate to reach out!
             </p>
+            <a href="https://aptorit.com" target="_blank" rel="noreferrer"
+              className="card p-4 flex items-center gap-4 hover:border-[var(--accent)] transition-colors duration-200">
+              <img src="/aptorit.svg" alt="Aptorit Technologies LLP" className="w-7 h-7 object-contain" />
+              <div>
+                <p className="text-xs font-medium" style={{ color: "var(--text-2)" }}>Company</p>
+                <p className="text-sm font-semibold mt-0.5" style={{ color: "var(--text)" }}>aptorit.com</p>
+              </div>
+            </a>
             {LINKS.map(l => (
               <a key={l.label} href={l.href} target="_blank" rel="noreferrer"
                 className="card p-4 flex items-center gap-4 hover:border-[var(--accent)] transition-colors duration-200">

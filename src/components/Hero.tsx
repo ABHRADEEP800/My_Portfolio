@@ -28,13 +28,14 @@ export default function Hero() {
             {/* ── Left: copy ── */}
             <div className="flex flex-col gap-5 reveal">
 
-              {/* Available badge */}
-              <div className="flex items-center gap-2.5">
+              {/* Founder badge */}
+              <a href="https://aptorit.com" target="_blank" rel="noreferrer"
+                className="inline-flex items-center gap-2.5 w-fit">
                 <span className="w-2 h-2 rounded-full animate-pulse flex-shrink-0" style={{ background: "var(--green)" }} />
                 <span className="text-sm font-mono font-medium" style={{ color: "var(--accent)" }}>
-                  Available for work
+                  Founder &amp; CEO · Aptorit Technologies
                 </span>
-              </div>
+              </a>
 
               {/* Name */}
               <h1 className="font-head font-extrabold leading-[1.05]">
@@ -50,15 +51,20 @@ export default function Hero() {
               <p className="text-base sm:text-xl font-mono font-medium" style={{ color: "var(--accent)" }}>
                 &gt;{" "}
                 <Typewriter
-                  words={["Full-Stack Developer", "UI/UX Enthusiast", "Open-Source Builder", "React Craftsman"]}
+                  words={["Founder & CEO", "Full-Stack Developer", "UI/UX Enthusiast", "Open-Source Builder", "React Craftsman"]}
                   loop cursor cursorStyle="|" typeSpeed={70} deleteSpeed={40} delaySpeed={1800}
                 />
               </p>
 
               {/* Bio */}
               <p className="max-w-md text-sm sm:text-base leading-relaxed" style={{ color: "var(--text-2)" }}>
-                I design and build modern web experiences — from pixel-perfect UIs to
-                scalable back-end systems. Based in{" "}
+                Founder &amp; CEO of{" "}
+                <a href="https://aptorit.com" target="_blank" rel="noreferrer"
+                  className="font-semibold hover:underline" style={{ color: "var(--accent)" }}>
+                  Aptorit Technologies LLP
+                </a>
+                , where I design and build modern web experiences — from pixel-perfect
+                UIs to scalable back-end systems. Based in{" "}
                 <span style={{ color: "var(--text)" }}>Kolkata, WB</span>.
               </p>
 
@@ -119,10 +125,10 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="hidden sm:flex absolute -bottom-4 -left-6 glass rounded-2xl px-3 py-2 items-center gap-2 shadow-lg">
-                  <span className="text-xl">⚡</span>
+                  <img src="/aptorit.svg" alt="Aptorit" className="w-6 h-6 object-contain" />
                   <div>
-                    <p className="text-xs font-semibold leading-none" style={{ color: "var(--text)" }}>Open to</p>
-                    <p className="text-[10px] mt-0.5" style={{ color: "var(--accent)" }}>Opportunities</p>
+                    <p className="text-xs font-semibold leading-none" style={{ color: "var(--text)" }}>Aptorit</p>
+                    <p className="text-[10px] mt-0.5" style={{ color: "var(--accent)" }}>Technologies LLP</p>
                   </div>
                 </div>
               </div>
