@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <!-- Full-bleed background for maskable safe area -->
+  <rect width="512" height="512" fill="#04040e"/>
+  <!-- Logo kept within central 60% (safe zone) -->
+  <text x="256" y="318" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="800" font-size="150" fill="url(#g)">AB.</text>
+</svg>

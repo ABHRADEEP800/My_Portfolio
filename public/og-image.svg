@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowV" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#38bdf8" fill-opacity="0.10"/>
+    </pattern>
+    <clipPath id="avatarClip"><circle cx="985" cy="315" r="150"/></clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#04040e"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <circle cx="150" cy="90" r="420" fill="url(#glowA)"/>
+  <circle cx="1120" cy="580" r="360" fill="url(#glowV)"/>
+
+  <!-- Border -->
+  <rect x="1" y="1" width="1198" height="628" rx="0" fill="none" stroke="#38bdf8" stroke-opacity="0.18" stroke-width="2"/>
+
+  <!-- AB. badge -->
+  <circle cx="92" cy="96" r="44" fill="#080818" stroke="url(#grad)" stroke-width="3"/>
+  <text x="92" y="114" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="800" font-size="36" fill="url(#grad)">AB.</text>
+
+  <!-- Eyebrow -->
+  <circle cx="164" cy="84" r="6" fill="#4ade80"/>
+  <text x="184" y="92" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="600" font-size="21" fill="#38bdf8" letter-spacing="1">FOUNDER &amp; CEO · APTORIT TECHNOLOGIES LLP</text>
+
+  <!-- Name -->
+  <text x="72" y="248" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="800" font-size="82" fill="#f0f4ff">Abhradeep Biswas</text>
+
+  <!-- Role line -->
+  <text x="72" y="308" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="600" font-size="34" fill="url(#grad)">Full-Stack Developer · Kolkata, India</text>
+
+  <!-- Divider -->
+  <rect x="74" y="348" width="120" height="4" rx="2" fill="url(#grad)"/>
+
+  <!-- Bio -->
+  <text x="72" y="404" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="25" fill="#94a3b8">Building modern, high-performance web experiences with</text>
+  <text x="72" y="442" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="25" fill="#94a3b8">React, TypeScript &amp; Node.js.</text>
+
+  <!-- Tech chips -->
+  <g font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="600" fill="#38bdf8">
+    <rect x="72" y="486" width="92" height="42" rx="21" fill="#38bdf8" fill-opacity="0.10" stroke="#38bdf8" stroke-opacity="0.35"/>
+    <text x="118" y="513" text-anchor="middle">React</text>
+    <rect x="176" y="486" width="150" height="42" rx="21" fill="#38bdf8" fill-opacity="0.10" stroke="#38bdf8" stroke-opacity="0.35"/>
+    <text x="251" y="513" text-anchor="middle">TypeScript</text>
+    <rect x="338" y="486" width="132" height="42" rx="21" fill="#38bdf8" fill-opacity="0.10" stroke="#38bdf8" stroke-opacity="0.35"/>
+    <text x="404" y="513" text-anchor="middle">Node.js</text>
+    <rect x="482" y="486" width="104" height="42" rx="21" fill="#38bdf8" fill-opacity="0.10" stroke="#38bdf8" stroke-opacity="0.35"/>
+    <text x="534" y="513" text-anchor="middle">Cloud</text>
+  </g>
+
+  <!-- Website -->
+  <text x="72" y="575" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="600" font-size="22" fill="#f0f4ff">abhradeep.com</text>
+
+  <!-- Avatar ring -->
+  <circle cx="985" cy="315" r="158" fill="none" stroke="url(#grad)" stroke-width="4"/>
+  <circle cx="985" cy="315" r="150" fill="#080818"/>
+  <text x="985" y="350" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="800" font-size="120" fill="url(#grad)">AB.</text>
+
+  <!-- Aptorit mark + wordmark bottom-right -->
+  <g transform="translate(915, 545)">
+    <rect x="0" y="0" width="56" height="56" rx="14" fill="#0e0e24" stroke="#2563EB" stroke-opacity="0.5"/>
+    <g transform="translate(8, 8) scale(0.4)">
+      <path d="M 22 2 Q 4 18 10 42 L 22 30 Z" fill="#2563EB"/>
+      <path d="M 24 2 Q 42 18 36 42 L 24 30 Z" fill="#06B6D4"/>
+    </g>
+    <text x="70" y="26" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="700" font-size="24" fill="#f0f4ff">Aptorit</text>
+    <text x="70" y="48" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="16" fill="#94a3b8">Technologies LLP</text>
+  </g>
+</svg>
