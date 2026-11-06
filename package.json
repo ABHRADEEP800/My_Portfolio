@@ -8,7 +8,12 @@
   },
   "type": "module",
   "overrides": {
-    "esbuild": "^0.28.1"
+    "esbuild": "^0.28.1",
+    "deepmerge": "npm:@oss-cve-patches/deepmerge@4.3.2",
+    "glob": "^14.0.4",
+    "@typescript-eslint/typescript-estree": {
+      "minimatch": "^11.0.5"
+    }
   },
   "scripts": {
     "dev": "vite",
